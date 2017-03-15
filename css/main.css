@@ -53,13 +53,6 @@ body {
 }
 
 
-/*
- * Cover
- */
-
-.cover {
-    padding: 0 20px;
-}
 
 
 /*
@@ -67,11 +60,13 @@ body {
  */
 
 .mastfoot {
+    animation: slideInUp 1s;
     color: #999;
-    /* IE8 proofing */
-    color: rgba(255, 255, 255, .5);
 }
 
+.cover {
+    animation: bounce infinite 2s;
+}
 
 /*
  * Affix and center
