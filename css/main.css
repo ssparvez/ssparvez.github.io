@@ -9,30 +9,38 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: #333;
+    background-color: #2d3884;
+}
+
+#gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
     color: #fff;
-    text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: Roboto, sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-    width: 100%;
-    height: 100%;
-    /* For at least Firefox */
-    min-height: 100%;
-}
 
-.page-header {
+nav {
     animation: slideInDown 1s;
 }
 
 .cover {
-    animation: bounce infinite 2s;
+    text-align: center;
+    animation: bounce infinite 3s;
+    animation-delay: 1s;
+}
+#me {
+    text-align: center;
+    line-height: 2em;
+    font-size: 18px;
 }
 
 .footer {
@@ -43,9 +51,24 @@ body {
     height: 60px;
     line-height: 60px;
     animation: slideInUp 1s;
+    text-align: center;
+}
+
+.btn {
+    padding: 1.05rem 2.75rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 12rem;
+    border: .2rem
+    solid white;
+    transition: all .2s ease-in-out;
+}
+.btn:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 #git:hover, #linked:hover
 {
-    animation: swing 1s;
+    animation: swing 0.5s;
 }
