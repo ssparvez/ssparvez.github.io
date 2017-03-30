@@ -1,16 +1,10 @@
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
-}
-
 /* Base structure */
 html,
 body {
     height: 100%;
     background-color: #2d3884;
 }
+
 
 #gradient
 {
@@ -71,4 +65,20 @@ nav {
 #git:hover, #linked:hover
 {
     animation: swing 0.5s;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+.navbar-nav > li a:hover{
+    background:transparent !important;
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+#currentPage {
+    border-bottom:2px solid white !important;
 }
