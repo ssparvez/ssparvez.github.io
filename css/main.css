@@ -13,20 +13,12 @@ body {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 
-nav {
-    animation: slideInDown 1s;
-}
-
 .cover {
     text-align: center;
     animation: bounce infinite 3s;
     animation-delay: 1s;
 }
-#me {
-    text-align: center;
-    line-height: 2em;
-    font-size: 16px;
-}
+
 
 .footer {
     position: absolute;

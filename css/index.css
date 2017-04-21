@@ -1,0 +1,9 @@
+nav {
+    animation: slideInDown 1s;
+}
+
+#me {
+    text-align: center;
+    line-height: 2em;
+    font-size: 16px;
+}
