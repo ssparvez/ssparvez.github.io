@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,24 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom css -->
     <link href="css/main.css" rel="stylesheet">
+    <!-- Angular js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
-<body>
+<body ng-app="">
     <div id="gradient"/>
     <div class="container">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <h1>Syed Shahryar Parvez</h1>
-                    <medium>Software Developer at Stony Brook University</medium>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">About</a></li>
-                    <li><a id="currentPage" href="#!"><b>Projects</b></a></li>
-                </ul>
-            </div><!-- /.container-fluid -->
-        </nav>
+        <!-- Header -->
+        <div ng-include="'include/nav.html'"></div>
+        <!-- Content -->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h2><a href="https://ssparvez.github.io/Premier-League-Data/">Premier League Data Visualization</a></h2>
@@ -52,20 +43,9 @@
                 <ul><li>A high school project built to compete in the 2012 and 2013 NY Science Olympiad Competition.</li></ul>
             </div>
         </div>
-        
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-md-offset-5">
-                    <a href="https://github.com/ssparvez"><img src="assets/GitHub.png" height="30" width="30" id="git"></a>
-                </div>
-                <div class="col-md-1">
-                    <a href="https://www.linkedin.com/in/syed-shahryar-parvez-560b6a93"><img src="assets/LinkedIn.png" height="30" width="33" id="linked"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div ng-include="'include/footer.html'"></div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>

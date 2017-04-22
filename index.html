@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +16,15 @@
     <!-- Custom css -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    
+    <!-- Angular js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
-<body>
+<body ng-app="">
     <div class="container">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <h1>Syed Shahryar Parvez</h1>
-                    <medium>Software Developer at Stony Brook University</medium>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href = "#!" id="currentPage"><b>About</b></a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div><!-- /.container-fluid -->
-        </nav>
+        <!-- Header -->
+        <div ng-include="'include/nav.html'"></div>
+        <!-- Content -->
         <div class="row">
             <div class="cover">
                 <h2>Hello, World!</h2>
@@ -47,18 +37,8 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-md-offset-5">
-                    <a href="https://github.com/ssparvez"><img src="assets/GitHub.png" height="30" width="30" id="git"></a>
-                </div>
-                <div class="col-md-1">
-                    <a href="https://www.linkedin.com/in/syed-shahryar-parvez-560b6a93"><img src="assets/LinkedIn.png" height="30" width="33" id="linked"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div ng-include="'include/footer.html'"></div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
@@ -67,5 +47,4 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
-
 </html>
