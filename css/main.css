@@ -2,18 +2,17 @@
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    animation: slideInUp 1s;
+    text-align: center;
 }
 
 body {
@@ -22,28 +21,11 @@ body {
     color: #fff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: Roboto, sans-serif;
+    /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-
-.cover {
-    text-align: center;
-    animation: bounce infinite 3s;
-    animation-delay: 1s;
-}
-
-
-.footer {
-    margin-top: 70px;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px;
-    animation: slideInUp 1s;
-    text-align: center;
-}
 
 .btn {
     padding: 1.05rem 2.75rem;
@@ -76,8 +58,4 @@ a:hover {
 }
 .navbar-nav > li a:hover {
     transform: scale(1.2);
-}
-
-#currentPage {
-    border-bottom:2px solid white !important;
 }

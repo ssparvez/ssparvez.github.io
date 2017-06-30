@@ -2,6 +2,12 @@ nav {
     animation: slideInDown 1s;
 }
 
+.cover {
+    text-align: center;
+    animation: bounce infinite 3s;
+    animation-delay: 1s;
+}
+
 #me {
     text-align: center;
     line-height: 2em;
