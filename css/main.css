@@ -1,14 +1,28 @@
 /* Base structure */
-html,
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-    height: 100%;
-    background-color: #2d3884;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
 }
 
 body {
+    background-color: #2d3884;
+    height: 100%;
     color: #fff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: Roboto, sans-serif;
+    margin-bottom: 60px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -21,7 +35,7 @@ body {
 
 
 .footer {
-    position: absolute;
+    margin-top: 70px;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
