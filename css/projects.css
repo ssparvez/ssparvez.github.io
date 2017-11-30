@@ -1,0 +1,19 @@
+.animate-enter {
+	animation: bounceInRight;
+}
+.animate-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  transition-delay: 0.1s;
+
+  /* As of 1.4.4, this must always be set: it signals ngAnimate
+    to not accidentally inherit a delay property from another CSS class */
+  transition-duration: 0s;
+
+  /* if you are using animations instead of transitions you should configure as follows:
+    animation-delay: 0.1s;
+    animation-duration: 0s; */
+}
+
+.animate-enter.animate-enter-active {
+	animation: bounceInRight;
+}
