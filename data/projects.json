@@ -1,7 +1,7 @@
 [
     {
         "label": "Audium",
-        "url": "",
+        "url": "http://app.audium.io.s3-website.us-east-2.amazonaws.com/",
         "description": "Currently building a full-stack web application based on Spotify. It uses Angular 4 (HTML/CSS/TypeScript) on the front end, with a backend REST API built with Spring Boot (Java) and uses MySQL for the DB."
     },
     {
