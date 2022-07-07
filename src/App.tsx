@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import me from './assets/me.png';
+import './App.scss';
+import { HelloText } from './components/HelloText';
 
 function App() {
+
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					My site is currently being transitioned to React! Please be patient
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+			<section className="hello">
+				<header className="App-header">
+					<span className="title">Shahryar Parvez</span>
+				</header>
+				<div className="content">
+					<div className="me">
+						<img src={me} />
+					</div>
+					<HelloText />
+				</div>
+			</section>
+			<section className="about"></section>
+			<section className="projects"></section>
 		</div>
 	);
 }

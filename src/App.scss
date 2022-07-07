@@ -1,0 +1,56 @@
+.App {
+  
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+header .title {
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+	margin: 0px 0px 0px 8px;
+	overflow: hidden;
+}
+
+section {
+	min-height: 100vh;
+	background-color: rgb(33, 33, 33);
+	color: #fff;
+}
+
+section.about {
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+// hello world styles
+section.hello {
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+
+			#hello-text {
+				margin-top: 50px;
+			}
+		}
+
+		img {
+			height: 400px;
+			margin-right: 20px;
+		}
+	}
+}

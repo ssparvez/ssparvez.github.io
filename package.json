@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-	"homepage": "https://ssparvez.github.io",
+  "homepage": "https://ssparvez.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,6 +11,7 @@
     "@types/node": "^16.11.43",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -18,8 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "sass": "^1.53.0"
   }
 }
