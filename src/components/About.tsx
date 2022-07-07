@@ -19,14 +19,14 @@ export const About = () => {
 					<strong>Python</strong>, and Klingon
 					<br />Experience with
 					<strong>React</strong>,
-					<strong>Angular</strong>,
+					<strong>AWS</strong>,
 					<strong>Node.js</strong> and
 					<strong>Spring Boot</strong>
 					<br />
 					<br />- Also -
 					<br />
 					<br />Former Londoner and current New Yorker
-					<br />Always supporting Liverpool FC and jamming to Tame Impala
+					<br />Always supporting Liverpool FC and jamming to psych music
 					<br />
 					<br />
 				</div>
