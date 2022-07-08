@@ -10,7 +10,7 @@ export const Hello = () => {
 			<header className="App-header">
 				<span className="title">Shahryar Parvez</span>
 				<div className="actions">
-					<a href={resumePDF} target='_blank' rel='noopener noreferrer'>Resume</a>
+					<a href={resumePDF} target='_blank' rel='noopener noreferrer'>Résumé</a>
 				</div>
 			</header>
 			<div className="content">

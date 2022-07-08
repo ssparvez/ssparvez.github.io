@@ -26,11 +26,11 @@ export const About = () => {
 					<br />- Also -
 					<br />
 					<br />Former Londoner and current New Yorker
-					<br />Always supporting Liverpool FC and jamming to psych music
+					<br />Always supporting Liverpool FC and vibing to psych music
 					<br />
 					<br />
 				</div>
-				<a className="resume-btn" href={resumePDF} target='_blank' rel='noopener noreferrer'>View Resume</a>
+				<a className="resume-btn" href={resumePDF} target='_blank' rel='noopener noreferrer'>View Résumé</a>
 			</div>
 		</section >
 	)

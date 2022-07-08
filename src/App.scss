@@ -20,7 +20,7 @@ header {
 
 	.actions {
 		display: flex;
-		
+
 		a {
 			margin-left: 8px;
 			text-decoration: none;
@@ -93,6 +93,10 @@ section.about, section.projects {
     line-height: 30px;
     font-weight: 400;
     letter-spacing: 2px;
+
+		strong {
+			margin-left: 4px;
+		}
 	}
 
 	.resume-btn {
