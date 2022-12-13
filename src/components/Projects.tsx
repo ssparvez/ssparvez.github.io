@@ -1,4 +1,11 @@
 import React from 'react';
+import jotterImage from './../assets/jotter.png';
+import lineTabImage from './../assets/linetab.png';
+import cryptofyImage from './../assets/cryptofy.jpg';
+import audiumImage from './../assets/audium.png';
+import geometricVRImage from './../assets/geometricvr.png';
+import plDataImage from './../assets/pldata.png';
+
 import './Projects.scss';
 
 export const Projects = () => {
@@ -9,10 +16,9 @@ export const Projects = () => {
 			years: [2020],
 			mainURL: 'http://thejotter.xyz',
 			codeURL: 'https://github.com/ssparvez/jotter',
-			image: 'jotter.png',
-			description:
-				'A full-stack web app for quickly taking and organizing notes. Built on React with Redux and Node.js with Express integrated with MongoDB.',
-			loaded: false
+			image: jotterImage,
+			description: 'A full-stack web app for quickly taking and organizing notes',
+			techStack: ['react', 'redux', 'node', 'express', 'mongodb']
 		},
 		{
 			name: 'Line Tab',
@@ -20,51 +26,49 @@ export const Projects = () => {
 			mainURL:
 				'https://chrome.google.com/webstore/detail/line-tab/flfjdodphlkeahmbnchjjjkoooahhkio?hl=en-US',
 			codeURL: 'https://github.com/ssparvez/line-tab',
-			image: 'linetab.png',
+			image: lineTabImage,
 			description:
-				'A CLI-based new tab Google Chrome extension. Built with Vanilla JS.',
-			loaded: false
+				'A CLI-inspired new tab extension for Google Chrome',
+			techStack: ['html', 'js', 'css']
 		},
 		{
 			name: 'Cryptofy',
 			years: [2018],
-			image: 'cryptofy.jpg',
+			image: cryptofyImage,
 			mainURL: 'https://ssparvez.github.io/cryptofy/',
 			codeURL: 'https://github.com/ssparvez/cryptofy',
-			description:
-				'A mobile app that tracks the prices and latest news on top cryptocurrencies with the coinmarketcap API. Built on Ionic with Angular and Firebase.',
-			loaded: false
+			description: 'A cross-platform mobile app that tracks the prices and latest news on top cryptocurrencies',
+			techStack: ['ionic', 'angular', 'firebase']
 		},
 		{
 			name: 'Audium',
 			years: [2017],
-			image: 'audium.png',
+			image: audiumImage,
 			mainURL: 'http://app.audium.io.s3-website.us-east-2.amazonaws.com/',
 			codeURL: 'https://github.com/ssparvez/AudiumFrontEnd',
-			description:
-				'A full-stack web application based on Spotify. It uses Angular 4, Spring Boot and MySQL.',
-			loaded: false
+			description: 'A full-stack web clone of Spotify',
+			techStack: ['angular', 'spring-boot', 'mysql']
+
 		},
 		{
 			name: 'GeometricVR',
 			years: [2017],
-			image: 'geometricvr.png',
+			image: geometricVRImage,
 			mainURL:
 				'https://drive.google.com/file/d/1b6D29qBMbOsCPq_k_hg5pFzTj9bmwRWF/view?usp=sharing',
 			codeURL: 'https://github.com/ssparvez/geometric-vr',
-			description:
-				'A virtual reality app that visualizes 3D shapes for iOS/Android. Created in the Unity3D environment with the GoogleVR SDK and behavior scripts written in C#',
-			loaded: false
+			description: 'A virtual reality app that visualizes 3D shapes for iOS/Android',
+			techStack: ['unity', 'c#', 'google-cardboard']
+
 		},
 		{
 			name: 'PL Data Visualization',
 			years: [2016],
-			image: 'pldata.png',
+			image: plDataImage,
 			mainURL: 'https://ssparvez.github.io/premier-league-data/',
 			codeURL: 'https://github.com/ssparvez/premier-league-data',
-			description:
-				'An interactive website that visualizes a soccer data set with D3.js and Materialize for the front-end design.',
-			loaded: false
+			description: 'An interactive website that visualizes a Premier League soccer data set',
+			techStack: ['js', 'd3', 'html', 'css']
 		}
 	];
 
@@ -74,8 +78,10 @@ export const Projects = () => {
 			<div className="project-list">
 				{projects.map(project => {
 					return (<div className="project-detail">
-						<div>
-							{project.name}
+						<img src={project.image} alt={project.name} />
+						<div className="middle">
+							<div className="text">{project.name}</div>
+							<div className="description">{project.description}</div>
 						</div>
 					</div>)
 				})}
