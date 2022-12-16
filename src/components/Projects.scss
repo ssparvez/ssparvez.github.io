@@ -1,8 +1,8 @@
 .projects {
 
-	@media (min-width:600px)  { 
+	@media (max-width: 600px)  { 
 		.project-list {
-			display: flex;
+			display: flex !important;
 			flex-direction: column;
 		}
 	}
