@@ -1,4 +1,12 @@
 .projects {
+
+	@media (min-width:600px)  { 
+		.project-list {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
 	.project-list {
 		display: grid;
 		gap: 1rem;
