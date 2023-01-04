@@ -3,10 +3,12 @@ import me from './../assets/me.png';
 import resumePDF from './../assets/resume.pdf';
 import { HelloText } from './HelloText';
 
+import './Landing.scss';
 
-export const Hello = () => {
+
+export const Landing = () => {
 	return (
-		<section className="hello">
+		<section className="landing">
 			<header className="App-header">
 				<span className="title">Shahryar Parvez</span>
 				<div className="actions">
@@ -15,10 +17,14 @@ export const Hello = () => {
 			</header>
 			<div className="content">
 				<div className="me">
-					<img src={me} />
+					<img alt="shahryar" src={me} />
 				</div>
 				<HelloText />
 			</div>
-		</section >
+			<div className="contact">
+				<i className="devicon-github-original" title="GitHub" onClick={() => window.open("https://github.com/ssparvez", "_blank")}></i>
+				<i className="devicon-linkedin-plain" title="LinkedIn" onClick={() => window.open("https://linkedin.com/in/ssparvez", "_blank")}></i>
+			</div>
+		</section>
 	)
 }

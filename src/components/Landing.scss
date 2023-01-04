@@ -1,0 +1,43 @@
+section.landing {
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+
+			#hello-text {
+				margin-top: 36px;
+			}
+		}
+
+		img {
+			height: 400px;
+			margin-right: 20px;
+		}
+
+		
+	}
+
+	.contact {
+		margin-top: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 768px) {
+			margin-top: 24px;
+		}
+
+		i {
+			font-size: 32px;
+			cursor: pointer;
+		}
+
+		i:first-child {
+			margin-right: 32px;
+		}
+	}
+}

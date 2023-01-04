@@ -1,5 +1,6 @@
 import React from 'react';
 import resumePDF from './../assets/resume.pdf';
+import './About.scss';
 
 export const About = () => {
 	return (
