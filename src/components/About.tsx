@@ -7,6 +7,7 @@ export const About = () => {
 		<section className="about">
 			<h1 className="section-header">About Me</h1>
 			<div className="content">
+				<div id="current-title"><strong>Software Engineer</strong> at <strong>JPMorgan Chase & Co.</strong></div>
 				<div id="bio">
 					<strong>Designer</strong>,
 					<strong>Developer</strong>, and
