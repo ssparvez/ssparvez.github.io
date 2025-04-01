@@ -1,5 +1,5 @@
 import React from 'react';
-import me from './../assets/me.png';
+import me from './../assets/me-alt.jpg';
 import resumePDF from './../assets/resume.pdf';
 import { HelloText } from './HelloText';
 
