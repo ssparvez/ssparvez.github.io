@@ -3,20 +3,31 @@ section.landing {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 40px;
+		margin-top: 80px;
 
 		@media (max-width: 768px) {
 			flex-direction: column;
+
+			.me {
+				margin-right: 0 !important;
+
+				img {
+					height: 300px !important;
+				}
+			}
 
 			#hello-text {
 				margin-top: 36px;
 			}
 		}
 
-		img {
-			height: 375px;
+		.me {
 			margin-right: 40px;
-			border-radius: 100%;
+
+			img {
+				height: 375px;
+				border-radius: 100%;
+			}
 		}
 	}
 

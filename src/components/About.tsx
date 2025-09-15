@@ -28,7 +28,7 @@ export const About = () => {
 					<br />- Also -
 					<br />
 					<br />Former Londoner and current New Yorker
-					<br />Always supporting Liverpool FC and vibing to psych music
+					<br />Always supporting Liverpool FC and vibing to music
 					<br />
 					<br />
 				</div>
