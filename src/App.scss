@@ -5,7 +5,12 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 16px;
+	align-items: center;
+	padding: 24px 48px;
+
+	@media (max-width: 768px) {
+		padding: 16px;
+	}
 
 	.title {
 		font-weight: 400;
@@ -27,6 +32,18 @@ header {
 			font-weight: bold;
 			color: #fff;
 			text-transform: uppercase;
+
+			transition: .5s ease;
+			border: 2px white solid;
+			border-radius: 10px;
+			padding: 6px 8px;
+			font-size: 12px;
+
+			&:hover {
+				background-color: #18ffff;
+				color: rgb(33, 33, 33);
+				border-color: #18ffff;
+			}
 		}
 	}
 }
