@@ -1,6 +1,6 @@
 .projects {
 
-	@media (max-width: 600px)  { 
+	@media (max-width: 600px) {
 		.project-list {
 			display: flex !important;
 			flex-direction: column;
@@ -16,7 +16,7 @@
 
 		.project-detail {
 			//border: 1px solid white;
-			border-radius: 8px;
+			border-radius: 16px;
 			overflow: hidden;
 			position: relative;
 
@@ -30,7 +30,7 @@
 				i.devicon-github-original {
 					opacity: 1;
 				}
-				
+
 			}
 
 			img {

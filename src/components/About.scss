@@ -1,4 +1,8 @@
 .about {
+	a {
+		text-decoration: none;
+	}
+
 	#current-title {
 		font-size: 20px;
 		padding: 8px 16px;
@@ -6,6 +10,12 @@
 		border-radius: 28px;
 		margin-bottom: 20px;
 		color: #154C8A;
+		text-align: center;
+
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	#bio {
@@ -43,7 +53,6 @@
 
 		// button raised effect
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
-
 
 		background-color: #18ffff;
 	}

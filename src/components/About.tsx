@@ -7,23 +7,28 @@ export const About = () => {
 		<section className="about">
 			<h1 className="section-header">About Me</h1>
 			<div className="content">
-				<div id="current-title"><strong>Software Engineer</strong> at <strong>JPMorgan Chase & Co.</strong></div>
+				<a href='https://jpmorgan.com' target='_blank' rel='noopener noreferrer'>
+					<div id="current-title">
+						<strong>Software Engineer </strong>
+						<span> at<strong> JPMorgan Chase & Co.</strong></span>
+					</div>
+				</a>
 				<div id="bio">
-					<strong>Designer</strong>,
-					<strong>Developer</strong>, and
+					<strong>Developer</strong>,
+					<strong>Designer</strong>, and
 					<strong>Tech Enthusiast</strong>
 					<br />Studied
 					<strong>Computer Science</strong> at
 					<strong>Stony Brook University</strong>
 					<br />Proficient in
 					<strong>Java</strong>,
-					<strong>JavaScript</strong>,
-					<strong>Python</strong>, and Klingon
-					<br />Experience with
-					<strong>React</strong>,
+					<strong>JavaScript</strong>, and
+					<strong>Python</strong>
+					<br />Experienced with
+					<strong>Spring Boot</strong>,
 					<strong>AWS</strong>,
-					<strong>Node.js</strong> and
-					<strong>Spring Boot</strong>
+					<strong>Kubernetes</strong> and
+					<strong>React</strong>
 					<br />
 					<br />- Also -
 					<br />
